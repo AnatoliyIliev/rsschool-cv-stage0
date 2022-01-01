@@ -1,3 +1,86 @@
-h1 {
+:root {
+    --primeri-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --accent-white: #ffffff;
+  }
+  
+  a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    margin: 0;
+    padding: 0;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  } /* Отменяем подчеркивание при наведении у ссылки */
+  
+  li,
+  p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Убираем маркеры */
+  }
+  
+  img {
     display: block;
-}
+  }
+  
+  ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--accent-white);
+    color: var(--primeri-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }  
+ 
+/* 
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+  } */
+
+
+/* .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;   
+} */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  } */
+  
+  /* @media screen and (min-width: 480px) {
+    max-width: 480px;
+  } */
+  
+  /* @media screen and (min-width: 768px) {
+    max-width: 768px;
+  } */
+  
+  /* @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  } */
