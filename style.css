@@ -25,6 +25,7 @@
   
   img {
     display: block;
+    margin: 0 auto;
   }
   
   ul {
@@ -44,43 +45,44 @@
     font-weight: 400;
     line-height: 1.5;
   }  
- 
-/* 
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #4d2323;
-  } */
 
+  @media (min-width: 320px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;   
+    }
 
-/* .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;   
-} */
+    .title {
+      display: flex;
+      justify-content: center;
+    }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+    .main-nav {
+      display: flex;
+      margin: 0 auto;
+    }
+  
+    pre{
+      margin: 0;
+      background-color: #222;
+    }
+    code {
+      font-family: monospace;
+      color: #ffffff;
+    }
   }
   
-  /* @media (max-width: 768px) {
-    .section {
+  @media (min-width: 768px) {
+    .container {
+      width: 100%;  
+    }
+  }
+  
+  @media(min-width: 1440px) {
+    .container {
       width: 100%;
     }
-  } */
+  }
   
-  /* @media screen and (min-width: 480px) {
-    max-width: 480px;
-  } */
-  
-  /* @media screen and (min-width: 768px) {
-    max-width: 768px;
-  } */
-  
-  /* @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  } */
