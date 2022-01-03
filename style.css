@@ -1,3 +1,224 @@
-h1 {
-    display: block;
+:root {
+  --primeri-background-color: #EDF1FF;
+  --primeri-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-white: #ffffff;
 }
+
+h1 {
+  text-align: center;
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--primeri-text-color);
+}
+
+a:focus,
+a:hover  {
+  /* text-transform: uppercase; */
+  color: var(--accent-color);
+}
+
+li,
+p {
+  list-style-type: none;
+  margin: 5px;
+  margin-left: 15px;
+  padding: 0;
+  /* Убираем маркеры */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primeri-background-color);
+  color: var(--primeri-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}  
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;   
+}
+
+hr {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  size: 2;
+  color: #0000dd;
+}
+
+.my-foto {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px grey, 0 0 13px #333;
+}
+
+
+
+/*-------- BUTTON--------------*/
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  margin-left: 245px;
+}
+
+.icon-menu,
+.icon-close {
+  fill:  var(--primeri-text-color);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: var(--accent-color);
+}
+
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  border-top: 1px solid #ececec;
+  left: 8px;
+  width: 95%;
+  height: 220px;
+  text-align: center;
+  background:var(--primeri-background-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+}
+
+.menu-container.is-open{
+  display: block;
+}
+
+/*-------- HEADER--------------*/
+
+.page-header {
+  background-color: var(--primeri-background-color);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--primeri-text-color);
+}
+
+
+/*-------- MAIN--------------*/
+
+pre{
+  margin: 0;
+  background-color: #222;
+}
+
+code {
+  font-family: monospace;
+  color: var(--accent-white);
+}
+
+
+/*-------- FOOTER--------------*/
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu-container {
+    display: contents;
+  }  
+
+  /*-------- HEADER--------------*/
+
+  .page-header {  
+    background-color:  #C48A69;
+  }
+
+  .nav-list {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    height: 60px;
+    /* margin-bottom: 15px; */
+    align-items: center;
+    justify-content: end;
+  }
+
+  .nav-item {
+    margin-right: 10px;
+  }
+
+  aside {
+    display: block;
+    background: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+    float: left;
+  }
+
+  footer {
+    background-color:  #C48A69;
+  }
+
+  p {
+    padding-left: 15px;
+  }
+}
+
+
