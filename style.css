@@ -10,16 +10,21 @@ a {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  color: var(--primeri-text-color);
 }
 
-a:hover {
-  text-decoration: none;
-} /* Отменяем подчеркивание при наведении у ссылки */
+a:focus,
+a:hover  {
+  /* text-transform: uppercase; */
+  color: var(--accent-color);
+}
 
 li,
 p {
   list-style-type: none;
   margin: 5px;
+  margin-left: 15px;
   padding: 0;
   /* Убираем маркеры */
 }
@@ -57,6 +62,17 @@ hr {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
+.my-foto {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px grey, 0 0 13px #333;
+}
+
+
 
 /*-------- BUTTON--------------*/
 .menu-button {
@@ -152,9 +168,7 @@ code {
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 100%;  
-  }
+
   .menu-button {
     display: none;
   }
@@ -162,10 +176,44 @@ code {
   .menu-container {
     display: contents;
   }  
-}
 
-@media(min-width: 1440px) {
-  .container {
-    width: 100%;
+  /*-------- HEADER--------------*/
+
+  .page-header {  
+    background-color:  #C48A69;
+  }
+
+  .nav-list {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    height: 60px;
+    /* margin-bottom: 15px; */
+    align-items: center;
+    justify-content: end;
+  }
+
+  .nav-item {
+    margin-right: 10px;
+  }
+
+  aside {
+    display: block;
+    background: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+    float: left;
+  }
+
+  footer {
+    background-color:  #C48A69;
+  }
+
+  p {
+    padding-left: 15px;
   }
 }
+
+

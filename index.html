@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>cv</title>
+    <title>Anatoliy Iliev</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
   </head>
   <body>
@@ -64,7 +64,14 @@
     </header>
     <aside class="container">
       <nav>
-        <img src="./assets/avatar1.jpg" alt="Anatoliy Iliev" />
+        <div class="my-foto">
+          <img
+            class="personPhoto"
+            src="./assets/avatar1.jpg"
+            alt="Anatoliy Iliev"
+          />
+        </div>
+
         <h1 class="title">Anatoliy Iliev</h1>
         <p class="title">Junior Frontend Developer</p>
         <section id="contacts" class="contacts">
@@ -72,15 +79,14 @@
           <hr size="2" color="#0000dd" />
           <ul class="auth-nav">
             <li class="item">
-              <svg class="icon-location" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#location"></use>
-              </svg>
-              Location:
               <a
                 href="https://goo.gl/maps/42znVQzBgRxQvnXcA"
                 class="page__header-nav nav-tel"
               >
-                Odessa, Ukraine
+                <svg class="icon-location" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#location"></use>
+                </svg>
+                Location: Odessa, Ukraine
               </a>
             </li>
             <li class="item">
@@ -92,64 +98,59 @@
               </a>
             </li>
             <li class="item">
-              <svg class="icon-mail" width="16" height="12">
-                <use href="./assets/symbol-defs.svg#mail"></use>
-              </svg>
-              E-mail:
               <a
                 href="mailto:anatoliyiliiev@gmail.com"
                 class="page__header-nav nav-mailo"
               >
-                anatoliyiliiev@gmail.com
+                <svg class="icon-mail" width="16" height="12">
+                  <use href="./assets/symbol-defs.svg#mail"></use>
+                </svg>
+                E-mail:anatoliyiliiev@gmail.com
               </a>
             </li>
             <li class="item">
-              <svg class="icon-linkedin" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#linkedin"></use>
-              </svg>
-              Linkedin:
               <a
                 href="https://www.linkedin.com/in/anatoliy-iliev"
                 class="page__header-nav nav-tel"
               >
-                anatoliy-iliev
+                <svg class="icon-linkedin" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#linkedin"></use>
+                </svg>
+                Linkedin: anatoliy-iliev
               </a>
             </li>
             <li class="item">
-              <svg class="icon-telegram" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#telegram"></use>
-              </svg>
-              Telegram:
               <a
                 href="https://t.me/Anatoliy_Iliev"
                 class="page__header-nav nav-tel"
               >
-                @Anatoliy_Iliev
+                <svg class="icon-telegram" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#telegram"></use>
+                </svg>
+                Telegram: @Anatoliy_Iliev
               </a>
             </li>
             <li class="item">
-              <svg class="icon-github" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#github"></use>
-              </svg>
-              GitHub:
               <a
                 href="https://github.com/AnatoliyIliev"
                 class="page__header-nav nav-tel"
               >
-                AnatoliyIliev
+                <svg class="icon-github" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#github"></use>
+                </svg>
+                GitHub: AnatoliyIliev
               </a>
             </li>
             <li class="item">
-              <svg class="icon-discord" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#discord"></use>
-              </svg>
-              Discord:
               <a
                 href="https://discord.gg/WbwxbAbv"
                 class="page__header-nav nav-tel"
                 title="Discord"
               >
-                AnatoliyIliev#0257
+                <svg class="icon-discord" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#discord"></use>
+                </svg>
+                Discord: AnatoliyIliev#0257
               </a>
             </li>
           </ul>
@@ -268,18 +269,18 @@
         </p>
         <pre>          
 <code>
-  function friend(friends) {
-    let allFriends = [];
-    friends.map(friend => {
-      if (friend.length === 4) {
-        allFriends.push(friend);
-        return allFriends;
-      }
-    });
-    return allFriends;
-  }            
-  friend(['Ryan', 'Kieran', 'Mark']); 
-  // ['Ryan', 'Mark']
+function friend(friends) {
+  let allFriends = [];
+  friends.map(friend => {
+    if (friend.length === 4) {
+      allFriends.push(friend);
+      return allFriends;
+    }
+  });
+  return allFriends;
+}            
+friend(['Ryan', 'Kieran', 'Mark']); 
+// ['Ryan', 'Mark']
 </code>
         </pre>
       </section>
