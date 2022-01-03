@@ -61,6 +61,8 @@ body {
 hr {
   margin: 0 auto;
   margin-bottom: 10px;
+  size: 2;
+  color: #0000dd;
 }
 
 .my-foto {
