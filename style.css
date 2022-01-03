@@ -6,6 +6,9 @@
   --accent-white: #ffffff;
 }
 
+h1 {
+  text-align: center;
+}
 a {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   margin: 0;
