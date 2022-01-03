@@ -1,88 +1,171 @@
 :root {
-    --primeri-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #2196f3;
-    --accent-white: #ffffff;
+  --primeri-background-color: #EDF1FF;
+  --primeri-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-white: #ffffff;
+}
+
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+} /* Отменяем подчеркивание при наведении у ссылки */
+
+li,
+p {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  /* Убираем маркеры */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primeri-background-color);
+  color: var(--primeri-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}  
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;   
+}
+
+hr {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/*-------- BUTTON--------------*/
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  margin-left: 245px;
+}
+
+.icon-menu,
+.icon-close {
+  fill:  var(--primeri-text-color);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: var(--accent-color);
+}
+
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  border-top: 1px solid #ececec;
+  left: 8px;
+  width: 95%;
+  height: 220px;
+  text-align: center;
+  background:var(--primeri-background-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+}
+
+.menu-container.is-open{
+  display: block;
+}
+
+/*-------- HEADER--------------*/
+
+.page-header {
+  background-color: var(--primeri-background-color);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--primeri-text-color);
+}
+
+
+/*-------- MAIN--------------*/
+
+pre{
+  margin: 0;
+  background-color: #222;
+}
+
+code {
+  font-family: monospace;
+  color: var(--accent-white);
+}
+
+
+/*-------- FOOTER--------------*/
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;  
   }
-  
-  a {
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
-    margin: 0;
-    padding: 0;
+  .menu-button {
+    display: none;
   }
-  
-  a:hover {
-    text-decoration: none;
-  } /* Отменяем подчеркивание при наведении у ссылки */
-  
-  li,
-  p {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* Убираем маркеры */
-  }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  ul {
-    margin-left: 0;
-    /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;
-    /* Отступ слева в браузере Firefox, Safari, Chrome */
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: var(--accent-white);
-    color: var(--primeri-text-color);
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+
+  .menu-container {
+    display: contents;
   }  
+}
 
-  @media (min-width: 320px) {
-    .container {
-      width: 100%;
-      margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;   
-    }
-
-    .title {
-      display: flex;
-      justify-content: center;
-    }
-
-    .main-nav {
-      display: flex;
-      margin: 0 auto;
-    }
-  
-    pre{
-      margin: 0;
-      background-color: #222;
-    }
-    code {
-      font-family: monospace;
-      color: #ffffff;
-    }
+@media(min-width: 1440px) {
+  .container {
+    width: 100%;
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 100%;  
-    }
-  }
-  
-  @media(min-width: 1440px) {
-    .container {
-      width: 100%;
-    }
-  }
-  
+}

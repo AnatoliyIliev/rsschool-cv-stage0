@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Anatoliy Iliev</title>
+    <title>cv</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
   </head>
   <body>
-    <header class="page-header container">
-      <nav class="main-nav">
-        <!-- <button
+    <header class="page-header">
+      <nav class="main-nav container">
+        <button
           type="button"
           class="menu-button"
           aria-expanded="false"
@@ -25,14 +25,14 @@
           >
             <use
               class="icon-menu"
-              href="./images/symbol-defs.svg#icon-menu_40px"
+              href="./assets/symbol-defs.svg#icon-menu_40px"
             ></use>
             <use
               class="icon-close"
-              href="./images/symbol-defs.svg#icon-close_40px"
+              href="./assets/symbol-defs.svg#icon-close_40px"
             ></use>
           </svg>
-        </button> -->
+        </button>
         <div class="menu-container" id="menu-container" data-menu>
           <div class="header-space">
             <ul class="nav-list">
@@ -69,6 +69,7 @@
         <p class="title">Junior Frontend Developer</p>
         <section id="contacts" class="contacts">
           <h2 class="title">Contacts</h2>
+          <hr size="2" color="#0000dd" />
           <ul class="auth-nav">
             <li class="item">
               <svg class="icon-location" width="16" height="16">
@@ -83,12 +84,11 @@
               </a>
             </li>
             <li class="item">
-              <svg class="icon-tel" width="16" height="16">
-                <use href="./assets/symbol-defs.svg#mobile"></use>
-              </svg>
-              Phone:
               <a href="tel:+380681167555" class="page__header-nav nav-tel">
-                +38-068-11-67-555
+                <svg class="icon-tel" width="16" height="16">
+                  <use href="./assets/symbol-defs.svg#mobile"></use>
+                </svg>
+                Phone: +38-068-11-67-555
               </a>
             </li>
             <li class="item">
@@ -157,87 +157,88 @@
       </nav>
       <section id="skills">
         <h2 class="title">SKILLS</h2>
+        <hr size="2" color="#0000dd" />
         <ul>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-html5"></use>
             </svg>
             HTML5
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-css3"></use>
             </svg>
             CSS3
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-sass"></use>
             </svg>
             SASS
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-javascript"></use>
             </svg>
             JavaScript
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-react"></use>
             </svg>
             React
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-redux"></use>
             </svg>
             Redux
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-git"></use>
             </svg>
             Git
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-github"></use>
             </svg>
             GitHub
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-node-dot-js"></use>
             </svg>
             Node.js
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-webpack"></use>
             </svg>
             Webpack
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-python"></use>
             </svg>
             Python(basic knowledge)
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-figma"></use>
             </svg>
             Figma
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-visualstudiocode"></use>
             </svg>
             VSCode
           </li>
           <li>
-            <svg class="icon-location" width="16" height="16">
+            <svg class="icon" width="16" height="16">
               <use href="./assets/logo.svg#icon-PyCharm_Icon"></use>
             </svg>
             PyCharm
@@ -246,8 +247,9 @@
       </section>
     </aside>
     <main>
-      <section id="about-me">
+      <section id="about-me" class="container">
         <h2 class="title">ABOUT ME</h2>
+        <hr size="2" color="#0000dd" />
         <p>
           I am fond of programming, so self-development in this area is very
           important for me. I want to improve my skills and use them for
@@ -255,8 +257,9 @@
           attentive to detail, ready for tasks.
         </p>
       </section>
-      <section id="code-examples">
+      <section id="code-examples" class="container">
         <h2 class="title">CODE EXAMPLES</h2>
+        <hr size="2" color="#0000dd" />
         <p>
           Make a program that filters a list of strings and returns a list with
           only your friends name in it. If a name has exactly 4 letters in it,
@@ -280,8 +283,9 @@
 </code>
         </pre>
       </section>
-      <section id="education">
+      <section id="education" class="container">
         <h2 class="title">EDUCATION</h2>
+        <hr size="2" color="#0000dd" />
         <ul>
           <li></li>
           <li>
@@ -301,8 +305,9 @@
           </li>
         </ul>
       </section>
-      <section id="experience">
+      <section id="experience" class="container">
         <h2 class="title">EXPERIENCE</h2>
+        <hr size="2" color="#0000dd" />
         <ul>
           <li>
             <a href="https://anatoliyiliev.github.io/react-hw-04-movies/">
@@ -340,8 +345,9 @@
           </li>
         </ul>
       </section>
-      <section id="languages">
+      <section id="languages" class="container">
         <h2 class="title">LANGUAGES</h2>
+        <hr size="2" color="#0000dd" />
         <ul>
           <li><b>Ukrainian</b> - native</li>
           <li><b>Russian</b> - native</li>
@@ -349,11 +355,12 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <nav>
-        <ul>
-          <li class="item">
-            <svg class="icon-location" width="16" height="16">
+        <ul class="footer-item">
+          <li>2022</li>
+          <li>
+            <svg width="16" height="16">
               <use href="./assets/symbol-defs.svg#github"></use>
             </svg>
             <a
@@ -363,7 +370,7 @@
               AnatoliyIliev
             </a>
           </li>
-          <li>2022</li>
+
           <li>
             <a href="https://rs.school/js-stage0/">
               <img
