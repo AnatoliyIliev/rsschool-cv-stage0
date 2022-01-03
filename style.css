@@ -53,6 +53,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+
 }  
 
 .container {
@@ -174,6 +175,10 @@ code {
 
 @media (min-width: 768px) {
 
+  main {
+    display: flow-root;
+  }
+
   .menu-button {
     display: none;
   }
@@ -212,13 +217,19 @@ code {
     float: left;
   }
 
-  footer {
-    background-color:  #C48A69;
-  }
 
   p {
     padding-left: 15px;
   }
-}
+
+  /*-------- FOOTER--------------*/
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #C48A69;
+  }
+
+ }
 
 
